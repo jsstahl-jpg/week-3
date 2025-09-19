@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Container */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to bottom, #cce7ff, #fff7e6); /* sky to sand gradient */
+  color: #023047;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #0073e6, #00b4d8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Profile Picture */
+.profile-pic {
+  display: block;
+  margin: 15px auto;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #ffd166;
+}
+
+/* Lists */
+ol {
+  margin-left: 1.rem;
+  padding-left: 1.5rem;
+  list-style-position: inside;
+}
+
+ul.seashell-emoji {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.seashell-emoji li::before {
+  content: "🐚";
+  margin-right: 10px;
+}
+
+/* Buttons / Links */
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Project Cards */
+.project-card {
+  display: flex;
+  gap: 15px;
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-card img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #023047;
+  color: white;
+  margin-top: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+/* Two-column layout for homepage */
+.two-columns {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.two-columns section {
+  flex: 1 1 45%; /* each column takes ~45% width, will shrink on small screens */
+}
+
+/* Sun emoji ordered list */
+ol.sun-emoji {
+  list-style: none;
+  padding-left: 0;
+}
+
+ol.sun-emoji li::before {
+  content: "☀️ ";
+  margin-right: 8px;
+}
+a#linkedin-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0d8cd0;
+  color: white;
+  text-decoration: none;
+  border-radius: 56px;
+  margin: 25px; margin-top: 20px;
+}
+
